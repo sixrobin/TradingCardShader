@@ -1,4 +1,4 @@
-Shader "Card Visual"
+Shader "Card Element"
 {
     Properties
     {

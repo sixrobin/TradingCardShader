@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: CardVisual
+  m_Name: CardBack
   m_Shader: {fileID: 4800000, guid: d72df477b3ccd3c4d965b3f2af107787, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -62,6 +62,7 @@ Material:
     m_Ints: []
     m_Floats:
     - _BumpScale: 1
+    - _Cull: 2
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
@@ -75,9 +76,9 @@ Material:
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
-    - _StencilComp: 3
-    - _StencilPass: 2
-    - _StencilRef: 1
+    - _StencilComp: 0
+    - _StencilPass: 0
+    - _StencilRef: 0
     - _UVSec: 0
     - _ZWrite: 1
     m_Colors:
