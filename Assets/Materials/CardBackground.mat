@@ -44,7 +44,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Gradient:
-        m_Texture: {fileID: 2800000, guid: b13f67bfe88e74e409a0e6daf4f0b740, type: 3}
+        m_Texture: {fileID: 2800000, guid: 7b02a973a568a204792f9a1b81e15bef, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
@@ -65,7 +65,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _BrushIntensity: 0.19
+    - _BrushIntensity: 0.2
     - _BrushOffset: 0
     - _BumpScale: 1
     - _Cull: 0

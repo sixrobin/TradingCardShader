@@ -18,7 +18,7 @@ Shader "Card Background"
         _BrushOffset ("Brush Offset", Float) = 0
         _BrushIntensity ("Brush Intensity", Float) = 0.5
         
-        [PerRendererData] _MainTex ("Texture", 2D) = "white" {}
+        [PerRendererData] [HideInInspector] _MainTex ("Texture", 2D) = "white" {}
     }
     
     SubShader
