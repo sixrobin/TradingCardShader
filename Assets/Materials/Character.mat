@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Robe
+  m_Name: Character
   m_Shader: {fileID: 4800000, guid: 36831c16a0e534b4d9b2542729d6a1dc, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -62,7 +62,7 @@ Material:
     - _WindNoise:
         m_Texture: {fileID: 2800000, guid: 5c26d9801c6e4a242b06b2d0a66d5b2e, type: 3}
         m_Scale: {x: 0.05, y: 0.05}
-        m_Offset: {x: 0.03, y: 0.03}
+        m_Offset: {x: 0.04, y: 0.04}
     m_Ints: []
     m_Floats:
     - _BumpScale: 1
@@ -84,9 +84,9 @@ Material:
     - _StencilPass: 2
     - _StencilRef: 1
     - _UVSec: 0
-    - _WindIntensity: 0.4
+    - _WindIntensity: 0.3
     - _WindMaskMax: 1
-    - _WindMaskMin: 0.18
+    - _WindMaskMin: 0.33
     - _ZWrite: 1
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}

@@ -195,7 +195,7 @@ ParticleSystemRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_RenderMode: 0
   m_MeshDistribution: 0
   m_SortMode: 0
@@ -364,7 +364,7 @@ ParticleSystem:
     startSpeed:
       serializedVersion: 2
       minMaxState: 3
-      scalar: 0.5
+      scalar: 0.7
       minScalar: 0.3
       maxCurve:
         serializedVersion: 2
@@ -418,7 +418,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 1, g: 0.7957342, b: 0.6084906, a: 1}
+      maxColor: {r: 1, g: 0.79607844, b: 0.60784316, a: 1}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
@@ -1065,7 +1065,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 1
+      scalar: 1.5
       minScalar: 10
       maxCurve:
         serializedVersion: 2
@@ -5012,13 +5012,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 432085761}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.04624542, y: -0, z: -0, w: 0.99893016}
-  m_LocalPosition: {x: -0.398, y: 0.317, z: -0.002}
-  m_LocalScale: {x: 1.0404, y: 1, z: 1}
+  m_LocalRotation: {x: 0.046224818, y: -0.0013803246, z: 0.029815871, w: 0.99848515}
+  m_LocalPosition: {x: -0.389, y: 0.336, z: 0}
+  m_LocalScale: {x: 1.06641, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1688622873}
-  m_LocalEulerAnglesHint: {x: 5.301, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 5.301, y: 0, z: 3.421}
 --- !u!212 &432085763
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5271,8 +5271,8 @@ Transform:
   m_GameObject: {fileID: 777350743}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.1021, z: 0}
-  m_LocalScale: {x: 2.8251, y: 6.5451155, z: 1}
+  m_LocalPosition: {x: -0.0009, y: 0.1228, z: 0}
+  m_LocalScale: {x: 2.5814147, y: 6.2177973, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1763923116}
@@ -5694,7 +5694,7 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 3
-      scalar: 0.5
+      scalar: 0.4
       minScalar: 0.07
       maxCurve:
         serializedVersion: 2
@@ -6277,7 +6277,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 1
+      scalar: 1.5
       minScalar: 10
       maxCurve:
         serializedVersion: 2
@@ -10777,7 +10777,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 0.34509805, g: 0.49019608, b: 0.44074288, a: 0.5019608}
+      maxColor: {r: 0.34509805, g: 0.49019608, b: 0.44074288, a: 0.2}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
@@ -15369,7 +15369,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: f18c5ebabe2d4104dafaee9f1e19c926, type: 2}
+  - {fileID: 2100000, guid: 4e90492b78135ca478f049e8afb77cbe, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -15493,7 +15493,7 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
-  m_DrawMode: 0
+  m_DrawMode: 2
   m_Size: {x: 3.19, y: 8}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
