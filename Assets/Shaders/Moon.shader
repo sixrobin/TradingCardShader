@@ -93,11 +93,12 @@ Shader "Moon"
             {
                 v2f o;
 
-                v.vertex.y += sin(_FloatingSpeed * _Time.y) * _FloatingAmplitude;
-                
                 o.vertex = UnityObjectToClipPos(v.vertex);
+                o.vertex.y += sin(_FloatingSpeed * _Time.y) * _FloatingAmplitude;
+                
                 o.uv = TRANSFORM_TEX(v.uv, _MainTex);
                 o.color = v.color;
+                
                 return o;
             }
 
