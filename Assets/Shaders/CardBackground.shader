@@ -17,6 +17,7 @@ Shader "Card Background"
         _Gradient ("Gradient", 2D) = "black" {}
         _BrushOffset ("Brush Offset", Float) = 0
         _BrushIntensity ("Brush Intensity", Float) = 0.5
+        _BrushScrollSpeed ("Brush Scroll Speed", Float) = 0
         
         [PerRendererData] [HideInInspector] _MainTex ("Texture", 2D) = "white" {}
     }
@@ -68,6 +69,7 @@ Shader "Card Background"
             sampler2D _Gradient;
             float _BrushOffset;
             float _BrushIntensity;
+            float _BrushScrollSpeed;
 
             v2f vert(appdata v)
             {
@@ -89,7 +91,7 @@ Shader "Card Background"
 
                 float2 uv = i.uv * worldScale.xy;
                 
-                float brush = tex2D(_MainTex, uv).r;
+                float brush = tex2D(_MainTex, uv + float2(0, _BrushScrollSpeed * _Time.y)).r;
                 brush = brush * _BrushIntensity + _BrushOffset;
 
                 float4 gradientValue = tex2D(_Gradient, float2(uv.y + brush, 0));

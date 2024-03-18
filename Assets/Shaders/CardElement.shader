@@ -19,6 +19,15 @@ Shader "Card Element"
         [Enum(UnityEngine.Rendering.BlendMode)]
         _DstBlend ("Destination Blend", float) = 1
         
+        [Header(WIND)]
+        [Space(5)]
+        _WindNoise ("Wind Noise", 2D) = "black" {}
+        [MaterialToggle] _UseWindMaskTexture ("Use Wind Mask Texture", Float) = 0
+        _WindMaskTexture ("Wind Mask Texture", 2D) = "black" {}
+        _WindIntensity ("Wind Intensity", Float) = 0
+        _WindMaskMin ("Wind Mask Min", Range(0, 1)) = 0
+        _WindMaskMax ("Wind Mask Max", Range(0, 1)) = 1
+        
         [PerRendererData] _MainTex ("Texture", 2D) = "white" {}
     }
     
@@ -67,6 +76,14 @@ Shader "Card Element"
             sampler2D _MainTex;
             float4 _MainTex_ST;
 
+            sampler2D _WindNoise;
+            float4 _WindNoise_ST;
+            float _UseWindMaskTexture;
+            sampler2D _WindMaskTexture;
+            float _WindIntensity;
+            float _WindMaskMin;
+            float _WindMaskMax;
+            
             v2f vert(appdata v)
             {
                 v2f o;
@@ -78,7 +95,18 @@ Shader "Card Element"
 
             fixed4 frag(v2f i) : SV_Target
             {
-                float4 color = tex2D(_MainTex, i.uv);
+                float2 uv = i.uv;
+                float wind = tex2D(_WindNoise, uv * _WindNoise_ST.xy + _WindNoise_ST.zw * _Time.y);
+                wind = (wind - 0.5) * 2 * _WindIntensity;
+
+                if (_UseWindMaskTexture == 1)
+                    wind *= _WindIntensity * tex2D(_WindMaskTexture, uv);
+                else
+                    wind *= _WindIntensity * smoothstep(_WindMaskMin, _WindMaskMax, 1 - i.uv.y);
+
+                uv += wind;
+                
+                float4 color = tex2D(_MainTex, uv);
                 color.rgb *= i.color;
                 return color;
             }
