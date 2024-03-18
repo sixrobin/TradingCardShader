@@ -67,7 +67,7 @@ Material:
     m_Floats:
     - _BrushIntensity: 0.2
     - _BrushOffset: 0
-    - _BrushScrollSpeed: -0.008
+    - _BrushScrollSpeed: -0.005
     - _BumpScale: 1
     - _Cull: 0
     - _Cutoff: 0.5
