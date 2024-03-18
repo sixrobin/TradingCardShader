@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: MoonGlow
-  m_Shader: {fileID: 4800000, guid: d72df477b3ccd3c4d965b3f2af107787, type: 3}
+  m_Name: Moon
+  m_Shader: {fileID: 4800000, guid: f8350d868e0ba3147948eaccd68fa8b3, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -43,6 +43,10 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _GlowTexture:
+        m_Texture: {fileID: 2800000, guid: 1e61e9c49ccdaf24eb53eafbeac3ae1b, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _MainTex:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -59,6 +63,10 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _WindMaskTexture:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _WindNoise:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -70,9 +78,14 @@ Material:
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
     - _DstBlend: 1
+    - _FloatingAmplitude: 0.08
+    - _FloatingSpeed: 0.7
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
+    - _GlowIntensityMax: 1
+    - _GlowIntensityMin: 0.85
+    - _GlowSpeed: 1.5
     - _Metallic: 0
     - _Mode: 0
     - _OcclusionStrength: 1
@@ -92,5 +105,6 @@ Material:
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _GlowColor: {r: 0.9433962, g: 0.7593437, b: 0.38714847, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
