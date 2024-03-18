@@ -3,11 +3,16 @@ Shader "Border"
     Properties
     {
         [Header(HOLOFOIL)]
+        [Space(5)]
         _HolofoilMask ("Holofoil Mask", 2D) = "white" {}
-        _HolofoilColor ("Holofoil Color", Color) = (1,1,1,1)
+        [HDR] _HolofoilColor ("Holofoil Color", Color) = (1,1,1,1)
         _HolofoilExponent ("Holofoil Exponent", Float) = 3
         _HolofoilViewDirOffset ("Holofoil View Direction Offset", Float) = 0
 
+        [Header(NO HOLOFOIL)]
+        [Space(5)]
+        _NoHolofoilColor ("No Holofoil Color", Color) = (1,1,1,1)
+        
         [PerRendererData] [HideInInspector] _MainTex ("Sprite Texture", 2D) = "white" {}
         [MaterialToggle] PixelSnap ("Pixel snap", Float) = 0
         [HideInInspector] _RendererColor ("RendererColor", Color) = (1,1,1,1)
@@ -47,6 +52,8 @@ Shader "Border"
         float _HolofoilExponent;
         float _HolofoilViewDirOffset;
 
+        float4 _NoHolofoilColor;
+
         void vert(inout appdata_full v, out Input o)
         {
             v.vertex = UnityFlipSprite(v.vertex, _Flip);
@@ -59,9 +66,10 @@ Shader "Border"
         {
             float4 color = SampleSpriteTexture(i.uv_MainTex) * i.color;
 
-            float holofoilMask = tex2D(_HolofoilMask, i.uv_MainTex);
-            holofoilMask *= pow(max(0, sin((i.viewDirection.x + _HolofoilViewDirOffset) + sin(i.viewDirection.y))), _HolofoilExponent);
+            float holofoilMaskTexture = tex2D(_HolofoilMask, i.uv_MainTex).r;
+            float holofoilMask = holofoilMaskTexture * pow(max(0, sin((i.viewDirection.x + _HolofoilViewDirOffset) + sin(i.viewDirection.y))), _HolofoilExponent);
             color.rgb += holofoilMask * _HolofoilColor * _HolofoilColor.a;
+            color.rgb = lerp(color.rgb, color.rgb * _NoHolofoilColor, (1 - holofoilMaskTexture) * _NoHolofoilColor.a);
             
             o.Albedo = color.rgb * color.a;
             o.Alpha = color.a;

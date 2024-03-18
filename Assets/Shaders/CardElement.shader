@@ -12,6 +12,13 @@ Shader "Card Element"
         [Space(5)]
         _Cull ("Cull", Int) = 0
         
+        [Header(BLEND)]
+        [Space(5)]
+        [Enum(UnityEngine.Rendering.BlendMode)]
+        _SrcBlend ("Source Blend", float) = 1
+        [Enum(UnityEngine.Rendering.BlendMode)]
+        _DstBlend ("Destination Blend", float) = 1
+        
         [PerRendererData] _MainTex ("Texture", 2D) = "white" {}
     }
     
@@ -30,7 +37,7 @@ Shader "Card Element"
             Pass [_StencilPass]
         }
         
-        Blend SrcAlpha OneMinusSrcAlpha
+        Blend [_SrcBlend] [_DstBlend]
         Cull [_Cull]
         ZWrite Off
 
