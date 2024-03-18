@@ -99,7 +99,7 @@ Shader "Card/Glass"
                 o.vertex = UnityObjectToClipPos(v.vertex);
                 o.uv = TRANSFORM_TEX(v.uv, _MainTex);
                 o.color = v.color;
-                o.viewDirection = WorldSpaceViewDir(v.vertex);
+                o.viewDirection = ObjSpaceViewDir(v.vertex);
                 return o;
             }
 
