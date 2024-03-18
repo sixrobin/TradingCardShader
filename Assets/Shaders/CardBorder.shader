@@ -59,7 +59,7 @@ Shader "Card/Border"
             v.vertex = UnityFlipSprite(v.vertex, _Flip);
             UNITY_INITIALIZE_OUTPUT(Input, o);
             o.color = v.color * _RendererColor;
-            o.viewDirection = WorldSpaceViewDir(v.vertex);
+            o.viewDirection = ObjSpaceViewDir(v.vertex);
         }
 
         void surf(Input i, inout SurfaceOutput o)
