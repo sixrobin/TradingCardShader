@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Body
+  m_Name: Character_Robe
   m_Shader: {fileID: 4800000, guid: d72df477b3ccd3c4d965b3f2af107787, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -59,10 +59,14 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _WindMaskTexture:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _WindNoise:
         m_Texture: {fileID: 2800000, guid: 5c26d9801c6e4a242b06b2d0a66d5b2e, type: 3}
         m_Scale: {x: 0.05, y: 0.05}
-        m_Offset: {x: 0.04, y: 0.04}
+        m_Offset: {x: 0.03, y: 0.03}
     m_Ints: []
     m_Floats:
     - _BumpScale: 1
@@ -85,9 +89,9 @@ Material:
     - _StencilRef: 1
     - _UVSec: 0
     - _UseWindMaskTexture: 0
-    - _WindIntensity: 0.25
+    - _WindIntensity: 0.4
     - _WindMaskMax: 1
-    - _WindMaskMin: 0.3
+    - _WindMaskMin: 0.18
     - _ZWrite: 1
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}

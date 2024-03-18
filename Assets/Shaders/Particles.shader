@@ -1,4 +1,4 @@
-Shader "Particles"
+Shader "Card/Particles"
 {
     Properties
     {

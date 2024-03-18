@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: CardBackground
-  m_Shader: {fileID: 4800000, guid: 4bc704c7f99201c4782919023b31a411, type: 3}
+  m_Name: Character_Arms
+  m_Shader: {fileID: 4800000, guid: d72df477b3ccd3c4d965b3f2af107787, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -43,10 +43,6 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - _Gradient:
-        m_Texture: {fileID: 2800000, guid: 7b02a973a568a204792f9a1b81e15bef, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: -0.01}
     - _MainTex:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -63,16 +59,21 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _WindMaskTexture:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _WindNoise:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _BrushIntensity: 0.2
-    - _BrushOffset: 0
-    - _BrushScrollSpeed: -0.005
     - _BumpScale: 1
     - _Cull: 0
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
-    - _DstBlend: 0
+    - _DstBlend: 10
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
@@ -82,11 +83,15 @@ Material:
     - _Parallax: 0.02
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
-    - _SrcBlend: 1
+    - _SrcBlend: 5
     - _StencilComp: 3
     - _StencilPass: 2
     - _StencilRef: 1
     - _UVSec: 0
+    - _UseWindMaskTexture: 0
+    - _WindIntensity: 0
+    - _WindMaskMax: 1
+    - _WindMaskMin: 0
     - _ZWrite: 1
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}

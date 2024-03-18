@@ -1,4 +1,4 @@
-Shader "Card Stencil"
+Shader "Card/Stencil"
 {
     Properties
     {

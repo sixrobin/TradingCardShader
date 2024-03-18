@@ -1,4 +1,4 @@
-Shader "Card Background"
+Shader "Card/Background"
 {
     Properties
     {

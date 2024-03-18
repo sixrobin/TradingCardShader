@@ -1,4 +1,4 @@
-Shader "Border"
+Shader "Card/Border"
 {
     Properties
     {

@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Moon
-  m_Shader: {fileID: 4800000, guid: f8350d868e0ba3147948eaccd68fa8b3, type: 3}
+  m_Name: Card_Back
+  m_Shader: {fileID: 4800000, guid: d72df477b3ccd3c4d965b3f2af107787, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -43,10 +43,6 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - _GlowTexture:
-        m_Texture: {fileID: 2800000, guid: 1e61e9c49ccdaf24eb53eafbeac3ae1b, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
     - _MainTex:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -74,18 +70,13 @@ Material:
     m_Ints: []
     m_Floats:
     - _BumpScale: 1
-    - _Cull: 0
+    - _Cull: 2
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
-    - _DstBlend: 1
-    - _FloatingAmplitude: 0.1
-    - _FloatingSpeed: 0.8
+    - _DstBlend: 10
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
-    - _GlowIntensityMax: 1
-    - _GlowIntensityMin: 0.85
-    - _GlowSpeed: 1.5
     - _Metallic: 0
     - _Mode: 0
     - _OcclusionStrength: 1
@@ -93,9 +84,9 @@ Material:
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 5
-    - _StencilComp: 3
-    - _StencilPass: 2
-    - _StencilRef: 1
+    - _StencilComp: 0
+    - _StencilPass: 0
+    - _StencilRef: 0
     - _UVSec: 0
     - _UseWindMaskTexture: 0
     - _WindIntensity: 0
@@ -105,6 +96,5 @@ Material:
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _GlowColor: {r: 0.8207547, g: 0.69389546, b: 0.43747774, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1

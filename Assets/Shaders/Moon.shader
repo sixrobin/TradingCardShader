@@ -1,4 +1,4 @@
-Shader "Moon"
+Shader "Card/Moon"
 {
     Properties
     {

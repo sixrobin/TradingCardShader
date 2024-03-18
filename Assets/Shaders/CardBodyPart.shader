@@ -1,4 +1,4 @@
-Shader "Card Element"
+Shader "Card/Body Part"
 {
     Properties
     {
