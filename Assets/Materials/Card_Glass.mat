@@ -78,7 +78,7 @@ Material:
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
     - _DstBlend: 1
-    - _GlassExponent: 3
+    - _GlassExponent: 5
     - _GlassScaleX: 1
     - _GlassViewDirOffset: 0.8
     - _GlossMapScale: 1
