@@ -2,12 +2,16 @@ Shader "Card/Border"
 {
     Properties
     {
+        [Header(CULL)]
+        [Space(5)]
+        _Cull ("Cull", Int) = 0
+        
         [Header(HOLOFOIL)]
         [Space(5)]
         _HolofoilMask ("Holofoil Mask", 2D) = "white" {}
         [HDR] _HolofoilColor ("Holofoil Color", Color) = (1,1,1,1)
         _HolofoilExponent ("Holofoil Exponent", Float) = 3
-        _HolofoilViewDirOffset ("Holofoil View Direction Offset", Float) = 0
+        _HolofoilViewDirST ("Holofoil View Direction ST", Vector) = (1,1,0,0)
 
         [Header(NO HOLOFOIL)]
         [Space(5)]
@@ -29,7 +33,7 @@ Shader "Card/Border"
             "RenderType"="Transparent"
         }
 
-        Cull Off
+        Cull [_Cull]
         Lighting Off
         ZWrite Off
         Blend One OneMinusSrcAlpha
@@ -50,7 +54,7 @@ Shader "Card/Border"
         sampler2D _HolofoilMask;
         float4 _HolofoilColor;
         float _HolofoilExponent;
-        float _HolofoilViewDirOffset;
+        float4 _HolofoilViewDirST;
 
         float4 _NoHolofoilColor;
 
@@ -67,7 +71,7 @@ Shader "Card/Border"
             float4 color = SampleSpriteTexture(i.uv_MainTex) * i.color;
 
             float holofoilMaskTexture = tex2D(_HolofoilMask, i.uv_MainTex).r;
-            float holofoilMask = holofoilMaskTexture * pow(max(0, sin((i.viewDirection.x + _HolofoilViewDirOffset) + sin(i.viewDirection.y))), _HolofoilExponent);
+            float holofoilMask = holofoilMaskTexture * pow(max(0, sin((i.viewDirection.x * _HolofoilViewDirST.x + _HolofoilViewDirST.z) + sin(i.viewDirection.y * _HolofoilViewDirST.z + _HolofoilViewDirST.w))), _HolofoilExponent);
             color.rgb += holofoilMask * _HolofoilColor * _HolofoilColor.a;
             color.rgb = lerp(color.rgb, color.rgb * _NoHolofoilColor, (1 - holofoilMaskTexture) * _NoHolofoilColor.a);
             

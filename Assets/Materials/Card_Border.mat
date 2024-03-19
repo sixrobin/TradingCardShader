@@ -76,6 +76,7 @@ Material:
     m_Floats:
     - PixelSnap: 0
     - _BumpScale: 1
+    - _Cull: 0
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
     - _DstBlend: 10
@@ -99,6 +100,7 @@ Material:
     - _EmissionColor: {r: 0.6037736, g: 0.33148357, b: 0, a: 1}
     - _Flip: {r: 1, g: 1, b: 1, a: 1}
     - _HolofoilColor: {r: 1.7036692, g: 0.63273066, b: 0.120542616, a: 1}
+    - _HolofoilViewDirST: {r: 1, g: 1, b: -1, a: 0}
     - _NoHolofoilColor: {r: 1, g: 0.94576657, b: 0.8537736, a: 1}
     - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []
