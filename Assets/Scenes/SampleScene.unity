@@ -295,7 +295,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8148072361742167461, guid: 47789bf961e86ac40a0fa19ba119d3fa, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 4.98
       objectReference: {fileID: 0}
     - target: {fileID: 8148072361742167461, guid: 47789bf961e86ac40a0fa19ba119d3fa, type: 3}
       propertyPath: m_LocalPosition.y
@@ -455,7 +455,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2486160208800200, guid: dc58342381969844cbbfd8ebf4fbdda4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -10.48
+      value: -3.83
       objectReference: {fileID: 0}
     - target: {fileID: 2486160208800200, guid: dc58342381969844cbbfd8ebf4fbdda4, type: 3}
       propertyPath: m_LocalPosition.y
@@ -500,6 +500,10 @@ PrefabInstance:
     - target: {fileID: 5943603444727976667, guid: dc58342381969844cbbfd8ebf4fbdda4, type: 3}
       propertyPath: m_Name
       value: Card_TheMoon_Test
+      objectReference: {fileID: 0}
+    - target: {fileID: 7103027911841530455, guid: dc58342381969844cbbfd8ebf4fbdda4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -684,13 +688,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1105275231}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0.037441265, z: -0, w: 0.9992989}
-  m_LocalPosition: {x: 0.49, y: -0.35, z: 0.53}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.4, y: -0.37, z: 0.5}
   m_LocalScale: {x: 0.42073855, y: 0.42073855, z: 0.42073855}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 272374517}
-  m_LocalEulerAnglesHint: {x: 0, y: -4.291, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1105275233
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -761,7 +765,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1205189992
 Transform:
   m_ObjectHideFlags: 0
