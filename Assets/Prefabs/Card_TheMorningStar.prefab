@@ -54,7 +54,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 4b0828b271769b649bb46133e5755942, type: 2}
+  - {fileID: 2100000, guid: 4a1c8eb2b21dc5b49b3ba584f0f578b0, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -140,7 +140,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 4e90492b78135ca478f049e8afb77cbe, type: 2}
+  - {fileID: 2100000, guid: a5ba356176b1e67458f21f4d204cba46, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -282,6 +282,10 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1495198191759266496, guid: 8177f3a8dfb252840bbd09bfb637ce76, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 3074cb792096728418a22ddae0b84624, type: 2}
     - target: {fileID: 3113521119397575186, guid: 8177f3a8dfb252840bbd09bfb637ce76, type: 3}
       propertyPath: m_Name
       value: Card_TheMorningStar
@@ -326,6 +330,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9216660017669478614, guid: 8177f3a8dfb252840bbd09bfb637ce76, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 81d126a32db5540439c900fc60701897, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:

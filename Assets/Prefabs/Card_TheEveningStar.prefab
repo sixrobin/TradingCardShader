@@ -140,7 +140,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 4e90492b78135ca478f049e8afb77cbe, type: 2}
+  - {fileID: 2100000, guid: fa2dd13dadf936c4687188a8b09b5717, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -282,6 +282,10 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1495198191759266496, guid: 8177f3a8dfb252840bbd09bfb637ce76, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 2b4046876e26d3d4a92779b9a3974963, type: 2}
     - target: {fileID: 3113521119397575186, guid: 8177f3a8dfb252840bbd09bfb637ce76, type: 3}
       propertyPath: m_Name
       value: Card_TheEveningStar
@@ -326,6 +330,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9216660017669478614, guid: 8177f3a8dfb252840bbd09bfb637ce76, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 2487c9ee11cd1bf46979aa49a4c65c40, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:

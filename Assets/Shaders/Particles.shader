@@ -10,7 +10,7 @@ Shader "Card/Particles"
         
         [Header(CULL)]
         [Space(5)]
-        _Cull ("Cull", Int) = 0
+        [Enum(UnityEngine.Rendering.CullMode)] _Cull ("Cull", Int) = 0
         
         [Header(BLEND)]
         [Space(5)]

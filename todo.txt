@@ -4,10 +4,6 @@ For each card:
 	- Extract border.
 	- Rescale stencil according to border.
 	
-	- Extract character (named Character)
-	- Place character in card.
-	- Create background color gradient and assign it.
-	
 	- Split character parts to use parallax/apply wind effects.
 	
 	- Add custom effects (moon, halo, etc.)
