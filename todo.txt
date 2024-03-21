@@ -19,3 +19,5 @@ For each card:
 - Make each card have its own stencil buffer index.
 - Additive light + stencil shader for "point lights".
 - Flower background variant, fitting new textures color more.
+- Pole star: add rings as VFX somehow?
+- Morning star: add light halo as VFX somehow?
