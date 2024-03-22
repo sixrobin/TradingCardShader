@@ -1,16 +1,10 @@
 For each card:
 	- Extract border.
 	- Rescale stencil according to border.
-	
-	- Split character parts to use parallax/apply wind effects.
-	
 	- Add custom effects (moon, halo, etc.)
-	- Add dust particles/lights.
-	- Tweak glass color.
 	
 	
 - Improve secondary textures handling.
-- Additive light + stencil shader for "point lights".
 - Flower background variant, fitting new textures color more.
 - Pole star: add rings as VFX somehow?
 - Morning star: add light halo as VFX somehow?
