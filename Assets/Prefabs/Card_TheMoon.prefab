@@ -19997,6 +19997,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Card_TheMoon
       objectReference: {fileID: 0}
+    - target: {fileID: 7684819455970861923, guid: 8177f3a8dfb252840bbd09bfb637ce76, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 3b0a99cd047be314486d5041340e4d40, type: 3}
     - target: {fileID: 8738755722634543361, guid: 8177f3a8dfb252840bbd09bfb637ce76, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

@@ -19997,6 +19997,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Card_ThePoleStar
       objectReference: {fileID: 0}
+    - target: {fileID: 7684819455970861923, guid: 8177f3a8dfb252840bbd09bfb637ce76, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: fa95ab34ec4f885428864bbe2247d5b9, type: 3}
     - target: {fileID: 8738755722634543361, guid: 8177f3a8dfb252840bbd09bfb637ce76, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
