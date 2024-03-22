@@ -8,7 +8,7 @@ Shader "Card/Border"
         
         [Header(HOLOFOIL)]
         [Space(5)]
-        _HolofoilMask ("Holofoil Mask", 2D) = "white" {}
+        [PerRendererData] [HideInInspector] _HolofoilMask ("Holofoil Mask", 2D) = "white" {} // Secondary texture.
         [HDR] _HolofoilColor ("Holofoil Color", Color) = (1,1,1,1)
         _HolofoilExponent ("Holofoil Exponent", Float) = 3
         _HolofoilViewDirST ("Holofoil View Direction ST", Vector) = (1,1,0,0)
@@ -51,7 +51,7 @@ Shader "Card/Border"
             float3 viewDirection;
         };
 
-        sampler2D _HolofoilMask;
+        sampler2D _HolofoilMask; // Secondary texture.
         float4 _HolofoilColor;
         float _HolofoilExponent;
         float4 _HolofoilViewDirST;
