@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3704591673219402198}
   - component: {fileID: 5592506729638251766}
   m_Layer: 0
-  m_Name: Character_Robe
+  m_Name: Robe
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -97,7 +97,7 @@ GameObject:
   - component: {fileID: 3765433843344419732}
   - component: {fileID: 8841684917018995671}
   m_Layer: 0
-  m_Name: Character_Head
+  m_Name: Head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -183,7 +183,7 @@ GameObject:
   - component: {fileID: 3556152837821477990}
   - component: {fileID: 2453142704523146305}
   m_Layer: 0
-  m_Name: Character_Body
+  m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -355,7 +355,7 @@ GameObject:
   - component: {fileID: 5850356998222194176}
   - component: {fileID: 8165270975387657328}
   m_Layer: 0
-  m_Name: Character_Arm_Right
+  m_Name: Arm_Right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -527,7 +527,7 @@ GameObject:
   - component: {fileID: 8505774735625457989}
   - component: {fileID: 1724564123928613055}
   m_Layer: 0
-  m_Name: Character_Arm_Left
+  m_Name: Arm_Left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
