@@ -273,6 +273,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Card_TheEveningStar
       objectReference: {fileID: 0}
+    - target: {fileID: 3097559309153532269, guid: 47789bf961e86ac40a0fa19ba119d3fa, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8148072361742167461, guid: 47789bf961e86ac40a0fa19ba119d3fa, type: 3}
       propertyPath: m_LocalPosition.x
       value: -6
@@ -422,6 +426,10 @@ PrefabInstance:
     - target: {fileID: 2549312633765680822, guid: d7913b7a81175854ea2d5d792b883e01, type: 3}
       propertyPath: m_Name
       value: Card_TheMoon
+      objectReference: {fileID: 0}
+    - target: {fileID: 3097559309153532269, guid: d7913b7a81175854ea2d5d792b883e01, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8148072361742167461, guid: d7913b7a81175854ea2d5d792b883e01, type: 3}
       propertyPath: m_LocalPosition.x
@@ -633,6 +641,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Card_TheMorningStar
       objectReference: {fileID: 0}
+    - target: {fileID: 3097559309153532269, guid: 1684460661f210f4788e21e561331879, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8148072361742167461, guid: 1684460661f210f4788e21e561331879, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2
@@ -689,6 +701,10 @@ PrefabInstance:
     - target: {fileID: 2549312633765680822, guid: 670fc93978bfc98419e097d7293643e8, type: 3}
       propertyPath: m_Name
       value: Card_ThePoleStar
+      objectReference: {fileID: 0}
+    - target: {fileID: 3097559309153532269, guid: 670fc93978bfc98419e097d7293643e8, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8148072361742167461, guid: 670fc93978bfc98419e097d7293643e8, type: 3}
       propertyPath: m_LocalPosition.x
