@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: ThePoleStar_Body
+  m_Name: TheMorningStar_Robe_Hand
   m_Shader: {fileID: 4800000, guid: d72df477b3ccd3c4d965b3f2af107787, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -86,12 +86,12 @@ Material:
     - _SrcBlend: 5
     - _StencilComp: 3
     - _StencilPass: 2
-    - _StencilRef: 4
+    - _StencilRef: 3
     - _UVSec: 0
     - _UseWindMaskTexture: 0
-    - _WindIntensity: 0.3
+    - _WindIntensity: 0.2
     - _WindMaskMax: 1
-    - _WindMaskMin: 0.37
+    - _WindMaskMin: 0.2
     - _ZWrite: 1
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}

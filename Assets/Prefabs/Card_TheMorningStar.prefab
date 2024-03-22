@@ -222,8 +222,8 @@ ParticleSystem:
     startColor:
       serializedVersion: 2
       minMaxState: 2
-      minColor: {r: 1, g: 0.7166305, b: 0.3537736, a: 1}
-      maxColor: {r: 1, g: 0.91715443, b: 0.6179246, a: 1}
+      minColor: {r: 1, g: 0.7166305, b: 0.3537736, a: 0.5803922}
+      maxColor: {r: 1, g: 0.91715443, b: 0.6179246, a: 0.5803922}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
@@ -1300,7 +1300,7 @@ ParticleSystem:
         m_RotationOrder: 4
     separateAxes: 0
   ColorModule:
-    enabled: 0
+    enabled: 1
     gradient:
       serializedVersion: 2
       minMaxState: 1
@@ -1325,17 +1325,17 @@ ParticleSystem:
         ctime6: 0
         ctime7: 0
         atime0: 0
-        atime1: 65535
-        atime2: 0
+        atime1: 23901
+        atime2: 65535
         atime3: 0
         atime4: 0
         atime5: 0
         atime6: 0
         atime7: 0
         m_Mode: 0
-        m_ColorSpace: -1
+        m_ColorSpace: 0
         m_NumColorKeys: 2
-        m_NumAlphaKeys: 2
+        m_NumAlphaKeys: 3
       minGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
@@ -10093,8 +10093,8 @@ ParticleSystem:
     startColor:
       serializedVersion: 2
       minMaxState: 2
-      minColor: {r: 1, g: 0.7166305, b: 0.3537736, a: 1}
-      maxColor: {r: 1, g: 0.91715443, b: 0.6179246, a: 1}
+      minColor: {r: 1, g: 0.7166305, b: 0.3537736, a: 0.5803922}
+      maxColor: {r: 1, g: 0.91715443, b: 0.6179246, a: 0.5803922}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
@@ -11171,7 +11171,7 @@ ParticleSystem:
         m_RotationOrder: 4
     separateAxes: 0
   ColorModule:
-    enabled: 0
+    enabled: 1
     gradient:
       serializedVersion: 2
       minMaxState: 1
@@ -11196,17 +11196,17 @@ ParticleSystem:
         ctime6: 0
         ctime7: 0
         atime0: 0
-        atime1: 65535
-        atime2: 0
+        atime1: 23901
+        atime2: 65535
         atime3: 0
         atime4: 0
         atime5: 0
         atime6: 0
         atime7: 0
         m_Mode: 0
-        m_ColorSpace: -1
+        m_ColorSpace: 0
         m_NumColorKeys: 2
-        m_NumAlphaKeys: 2
+        m_NumAlphaKeys: 3
       minGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
@@ -19675,7 +19675,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a5ba356176b1e67458f21f4d204cba46, type: 2}
+  - {fileID: 2100000, guid: 387937691c89dec44bf71999f024c84c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -19818,13 +19818,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9165247226198399606}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.08404261, y: -0.004842434, z: 0.0011731295, w: 0.9964497}
-  m_LocalPosition: {x: 0.631, y: 1.76, z: 0.503}
+  m_LocalRotation: {x: 0.079498366, y: 0.02768789, z: -0.38024104, w: 0.9210484}
+  m_LocalPosition: {x: 0.754, y: 1.525, z: 0.464}
   m_LocalScale: {x: 0.42073855, y: 0.42073855, z: 0.42073855}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6609942259652544370}
-  m_LocalEulerAnglesHint: {x: 9.642, y: -0.549, z: 0.089}
+  m_LocalEulerAnglesHint: {x: 9.642, y: -0.549, z: -44.911}
 --- !u!212 &6672073586726675805
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -19847,7 +19847,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a5ba356176b1e67458f21f4d204cba46, type: 2}
+  - {fileID: 2100000, guid: f02d9bd5e6e62ac4e80b1e81a049ec30, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
