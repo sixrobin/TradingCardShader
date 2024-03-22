@@ -78,8 +78,8 @@ Material:
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
     - _DstBlend: 1
-    - _FloatingAmplitude: 0.01
-    - _FloatingSpeed: 0.6
+    - _FloatingAmplitude: 0.07
+    - _FloatingSpeed: 1
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1

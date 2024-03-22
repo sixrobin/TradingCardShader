@@ -89,7 +89,7 @@ Material:
     - _StencilRef: 4
     - _UVSec: 0
     - _UseWindMaskTexture: 0
-    - _WindIntensity: 0.25
+    - _WindIntensity: 0
     - _WindMaskMax: 1
     - _WindMaskMin: 0.3
     - _ZWrite: 1

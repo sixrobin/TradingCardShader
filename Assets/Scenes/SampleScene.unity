@@ -275,7 +275,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8148072361742167461, guid: 47789bf961e86ac40a0fa19ba119d3fa, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2
+      value: -6
       objectReference: {fileID: 0}
     - target: {fileID: 8148072361742167461, guid: 47789bf961e86ac40a0fa19ba119d3fa, type: 3}
       propertyPath: m_LocalPosition.y
@@ -419,9 +419,13 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2549312633765680822, guid: d7913b7a81175854ea2d5d792b883e01, type: 3}
+      propertyPath: m_Name
+      value: Card_TheMoon
+      objectReference: {fileID: 0}
     - target: {fileID: 8148072361742167461, guid: d7913b7a81175854ea2d5d792b883e01, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6
+      value: -2
       objectReference: {fileID: 0}
     - target: {fileID: 8148072361742167461, guid: d7913b7a81175854ea2d5d792b883e01, type: 3}
       propertyPath: m_LocalPosition.y
@@ -458,10 +462,6 @@ PrefabInstance:
     - target: {fileID: 8148072361742167461, guid: d7913b7a81175854ea2d5d792b883e01, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2549312633765680822, guid: d7913b7a81175854ea2d5d792b883e01, type: 3}
-      propertyPath: m_Name
-      value: Card_TheMoon
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -743,7 +743,7 @@ SceneRoots:
   - {fileID: 406971918}
   - {fileID: 22559896}
   - {fileID: 167203771}
-  - {fileID: 824910711}
   - {fileID: 272374516}
+  - {fileID: 824910711}
   - {fileID: 1274682444}
   - {fileID: 1536188328}
