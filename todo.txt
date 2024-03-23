@@ -1,9 +1,4 @@
-For each card:
-	- Extract border.
-	- Rescale stencil according to border.
-	- Add custom effects (moon, halo, etc.)
-	
-	
+- Add custom effects (moon, halo, etc.)
 - Improve secondary textures handling.
 - Flower background variant, fitting new textures color more.
 - Pole star: add rings as VFX somehow?
