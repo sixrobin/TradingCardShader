@@ -1,4 +1,3 @@
 - Add custom effects (moon, halo, etc.)
-- Flower background variant, fitting new textures color more.
 - Pole star: add rings as VFX somehow?
 - Morning star: add light halo as VFX somehow?
