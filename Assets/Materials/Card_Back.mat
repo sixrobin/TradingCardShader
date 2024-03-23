@@ -43,7 +43,7 @@ Material:
     - _HolofoilExponent: 3
     m_Colors:
     - _Flip: {r: 1, g: 1, b: 1, a: 1}
-    - _HolofoilColor: {r: 1.498039, g: 0, b: 0.17705083, a: 0.2901961}
+    - _HolofoilColor: {r: 1.6226413, g: 0.06225691, b: 0, a: 0.2901961}
     - _HolofoilViewDirST: {r: 0.5, g: 1, b: 1, a: 0}
     - _NoHolofoilColor: {r: 1, g: 1, b: 1, a: 1}
     - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
