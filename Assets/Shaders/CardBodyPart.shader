@@ -23,12 +23,12 @@ Shader "Card/Body Part"
         [Space(5)]
         _WindNoise ("Wind Noise", 2D) = "black" {}
         [MaterialToggle] _UseWindMaskTexture ("Use Wind Mask Texture", Float) = 0
-        _WindMaskTexture ("Wind Mask Texture", 2D) = "black" {}
+        [PerRendererData] [HideInInspector] _WindMask ("Wind Mask", 2D) = "black" {} // Secondary texture.
         _WindIntensity ("Wind Intensity", Float) = 0
         _WindMaskMin ("Wind Mask Min", Range(0, 1)) = 0
         _WindMaskMax ("Wind Mask Max", Range(0, 1)) = 1
         
-        [PerRendererData] _MainTex ("Texture", 2D) = "white" {}
+        [PerRendererData] [HideInInspector] _MainTex ("Texture", 2D) = "white" {}
     }
     
     SubShader
@@ -79,7 +79,7 @@ Shader "Card/Body Part"
             sampler2D _WindNoise;
             float4 _WindNoise_ST;
             float _UseWindMaskTexture;
-            sampler2D _WindMaskTexture;
+            sampler2D _WindMask; // Secondary texture.
             float _WindIntensity;
             float _WindMaskMin;
             float _WindMaskMax;
@@ -100,7 +100,7 @@ Shader "Card/Body Part"
                 wind = (wind - 0.5) * 2 * _WindIntensity;
 
                 if (_UseWindMaskTexture == 1)
-                    wind *= _WindIntensity * tex2D(_WindMaskTexture, uv);
+                    wind *= _WindIntensity * tex2D(_WindMask, uv);
                 else
                     wind *= _WindIntensity * smoothstep(_WindMaskMin, _WindMaskMax, 1 - i.uv.y);
 
