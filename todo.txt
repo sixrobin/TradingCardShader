@@ -1,3 +1,0 @@
-- Add custom effects (moon, halo, etc.)
-- Pole star: add rings as VFX somehow?
-- Morning star: add light halo as VFX somehow?
