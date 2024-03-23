@@ -105,7 +105,9 @@ TextureImporter:
     indices: 
     edges: []
     weights: []
-    secondaryTextures: []
+    secondaryTextures:
+    - texture: {fileID: 2800000, guid: 2f996451af1bb374e8cbbe1d9edd28f5, type: 3}
+      name: _HolofoilMask
     nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
