@@ -41,7 +41,7 @@ Card border and back both use the same shader, that's used to apply some highlig
 ![breakdown_finishingtouches-ezgif com-optimize](https://github.com/sixrobin/TradingCardShader/assets/55784799/724acc88-fc0f-419f-8a68-d7112c12cae9)
 
 To polish everything, some fake point light (here visible behind the hands) and dust particles are added, as well as some post processing, mostly bloom.
-Each character has its own custom finishing touches. For instances, some of them have wind in the hair, or the "Moon" character as a moving and glowing moon behind her head, as on the original painting.
+Each character has its own custom finishing touches. For instances, some of them have wind in the hair, or the "Moon" character has a moving and glowing moon behind her head, as on the original painting.
 
 ## Glass effect
 A glass effect was implemented, to make the card and the character blend together even more. The effect looks a bit too noisy and wasn't kept for the gifs and videos that I shared of the project, but is still in the sources. It's made of some simple maths, such as dot products, between the view direction and a voronoi diagram that's tiled across the card.
